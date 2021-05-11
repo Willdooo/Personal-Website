@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import setCZ from "./language/CZ";
 import setENG from "./language/ENG";
@@ -34,9 +35,10 @@ const App = () => {
   return (
     <div className="App">
       <Home language={input.home} toggle={toggleLang} />
-      <About />
+      <About language={input.about} />
       <Skills />
       <Projects />
+      <Contact />
       <Footer />
     </div>
   );
