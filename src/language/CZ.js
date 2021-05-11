@@ -8,9 +8,14 @@ export default function setCZ() {
         projects: "PROJEKTY",
         contact: "KONTAKT",
       },
-      home: { name: "Daniel" },
+      home: {
+        name: "Daniel",
+        surname: "Wollmann",
+        greetings: "Hello, World!",
+        greetings2: "Já jsem",
+        frontend: "front-end developer",
+      },
     },
-
     about: { about: "loreipsum" },
   };
 }

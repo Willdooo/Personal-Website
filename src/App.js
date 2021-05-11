@@ -6,18 +6,34 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import setCZ from "./language/CZ";
+import setENG from "./language/ENG";
 
 const App = () => {
   const [language, setLanguage] = useState({
     czech: true,
   });
   const [input, setInput] = useState(setCZ());
-
   console.log(input);
-  console.log(input.home);
+
+  const toggleLang = () => {
+    setLanguage((prevState) => ({
+      ...prevState,
+      czech: !prevState.czech,
+    }));
+    if (!language.czech === true) {
+      setInput(setENG());
+    } else {
+      setInput(setCZ());
+    }
+  };
+  useState(() => {
+    toggleLang();
+    console.log(language);
+  }, []);
+
   return (
     <div className="App">
-      <Home language={input.home} />
+      <Home language={input.home} toggle={toggleLang} />
       <About />
       <Skills />
       <Projects />
