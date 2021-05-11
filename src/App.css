@@ -5,3 +5,14 @@
   font-size: calc(10px + 2vmin);
   color: black;
 }
+ul {
+  list-style-type: none;
+}
+li {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
