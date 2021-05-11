@@ -11,8 +11,9 @@ const useStyles = makeStyles(() => ({
     alignItems: "center",
     paddingTop: "2rem",
     paddingBottom: "2rem",
+    backgroundColor: "pink",
+
     "@media (max-width:1277px)": {
-      backgroundColor: "pink",
       display: "flex",
       flexDirection: "column",
     },

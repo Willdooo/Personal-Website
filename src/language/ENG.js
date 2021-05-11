@@ -33,5 +33,11 @@ export default function setENG() {
        developer  and I aspire to be a
         full-stack developer.`,
     },
+    skills: {
+      skills: "Skills",
+      languages: "Languages",
+      frameworkslibs: "Frameworks/Libraries",
+      others: "Others",
+    },
   };
 }
