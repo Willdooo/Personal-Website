@@ -37,7 +37,7 @@ const App = () => {
       <Home language={input.home} toggle={toggleLang} />
       <About language={input.about} />
       <Skills language={input.skills} />
-      <Projects />
+      <Projects language={input.projects} />
       <Contact />
       <Footer />
     </div>

@@ -1,3 +1,5 @@
+import { CalendarViewDaySharp } from "@material-ui/icons";
+
 export default function setENG() {
   return {
     home: {
@@ -39,6 +41,57 @@ export default function setENG() {
       back: "Back-end",
       others: "Others",
       soon: "Working on it!",
+    },
+    projects: {
+      title1: "Projects",
+      title2: "More projects",
+      website: {
+        title: "Personal Website",
+        text: "My personal mobile-friendly web portfolio to showcase my abilities. Do you like it?",
+        tools: "React, Material-UI, CSS",
+      },
+      cv: {
+        title: "CV Creator",
+        text: "You can create CVs in this application. You can add your image and download your CV as PDF.",
+        tools: "React, Material-UI, JS",
+        live: `https://willdooo.github.io/odinProject_CV-Application/`,
+        repo: `https://github.com/Willdooo/odinProject_CV-Application`,
+      },
+      eshop: {
+        title: "E-Shop",
+        text: "E-shop app in which you can browse through categories and add items to your shopping cart.",
+        tools: "React, React-router, Material-UI",
+      },
+      weather: {
+        title: "Weather App",
+        text: "Weather App with API for cities all over the world.",
+        tools: "JS, CSS",
+      },
+      memory: {
+        title: "Memory Game",
+        text: "Simple game to test your memory with Icons",
+        tools: "React, Material-UI",
+      },
+      todo: {
+        title: "TO-DO App",
+        text: "TO-DO App in which you can create your Projects(category) and TO-DOs (item in category).",
+        tools: "JS, CSS",
+      },
+      calculator: {
+        title: "Calculator",
+        text: "Calculator inspired by Windows 10 calculator.",
+        tools: "HTML, JS, CSS",
+      },
+      sketch: {
+        title: "Etch-A-Sketch",
+        text: "Simple application for drawing.",
+        tools: "HTML, JS, CSS",
+      },
+      restaurant: {
+        title: "Restaurant page",
+        text: "Restaurant website with three clickable buttons that will render out their content on click.",
+        tools: "JS, HTML, CSS",
+      },
     },
   };
 }

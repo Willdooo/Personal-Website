@@ -40,5 +40,56 @@ export default function setCZ() {
       others: "Ostatní",
       soon: "Pracuji na tom!",
     },
+    projects: {
+      title1: "Projekty",
+      title2: "Další projekty",
+      website: {
+        title: "Osobní web",
+        text: "Můj osobní web s portfóliem projektů. Líbí se Vám? Je mobile-friendly",
+        tools: "React, CSS, Material-UI",
+      },
+      cv: {
+        title: "Aplikace k vytváření životopisů",
+        text: "V této aplikaci můžete vytvořit svůj životopis s Vaší fotkou a následně Váš životopis stáhnout jako PDF.",
+        tools: "React, Material-UI, JS",
+        live: `https://willdooo.github.io/odinProject_CV-Application/`,
+        repo: `https://github.com/Willdooo/odinProject_CV-Application`,
+      },
+      eshop: {
+        title: "E-shop",
+        text: "E-shop, v kterém můžete přidávat položky do košíku.",
+        tools: "React, React-router, Material-UI",
+      },
+      weather: {
+        title: "Aplikace na předpověď počasí",
+        text: "Aplikace na předpověď počasí pro města po celém světě. ",
+        tools: "JS, CSS",
+      },
+      memory: {
+        title: "Paměťová hra",
+        text: "Jednoduchá hra, která otestuje limity vaší paměti s ikonkami.",
+        tools: "React, Material-UI",
+      },
+      todo: {
+        title: "TO-DO aplikace",
+        text: "TO-DO aplikace v které můžete vytvořit projekty a v těchto projektech můžete nadále vytvořit jednotlivé TO-DOs.",
+        tools: "JS, CSS",
+      },
+      calculator: {
+        title: "Kalkulačka",
+        text: "Kalkulačka inspirována kalkulačkou Windows10.",
+        tools: "HTML, JS, CSS",
+      },
+      sketch: {
+        title: "Grafo",
+        text: "Jednoduchá aplikace na kreslení",
+        tools: "HTML, JS, CSS",
+      },
+      restaurant: {
+        title: "Stránka pro restauraci",
+        text: "Stránka pro restauraci s třemi záložkami, které změní obsah stránky.",
+        tools: "JS, HTML, CSS",
+      },
+    },
   };
 }

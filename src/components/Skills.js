@@ -60,9 +60,9 @@ const Skills = (props) => {
   React.useEffect(() => {
     const timer = setInterval(() => {
       setProgress((prevProgress) =>
-        prevProgress >= 25 ? 0 : prevProgress + 1
+        prevProgress >= 98 ? 0 : prevProgress + 1
       );
-    }, 1000);
+    }, 1500);
     return () => {
       clearInterval(timer);
     };
@@ -70,7 +70,7 @@ const Skills = (props) => {
 
   const CircularProgressWithLabel = (pog) => {
     return (
-      <Box position="relative" display="inline-flex">
+      <Box display="inline-flex">
         <CircularProgress variant="determinate" {...pog} />
         <Box display="flex" alignItems="center" justifyContent="center">
           <Typography

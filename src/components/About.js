@@ -9,7 +9,7 @@ const useStyles = makeStyles(() => ({
     textAlign: "center",
     justifyContent: "center",
     alignItems: "center",
-    paddingTop: "2rem",
+    paddingTop: "4rem",
     paddingBottom: "2rem",
     backgroundColor: "pink",
 
