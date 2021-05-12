@@ -38,8 +38,8 @@ const App = () => {
       <About language={input.about} />
       <Skills language={input.skills} />
       <Projects language={input.projects} />
-      <Contact />
-      <Footer />
+      <Contact language={input.contacts} />
+      <Footer language={input.footer} />
     </div>
   );
 };

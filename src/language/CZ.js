@@ -59,37 +59,57 @@ export default function setCZ() {
         title: "E-shop",
         text: "E-shop, v kterém můžete přidávat položky do košíku.",
         tools: "React, React-router, Material-UI",
+        live: `https://willdooo.github.io/Shopping-Cart_App/`,
+        repo: `https://github.com/Willdooo/Shopping-Cart_App`,
       },
       weather: {
         title: "Aplikace na předpověď počasí",
         text: "Aplikace na předpověď počasí pro města po celém světě. ",
         tools: "JS, CSS",
+        live: `https://willdooo.github.io/Weather_App/`,
+        repo: `https://github.com/Willdooo/Weather_App`,
       },
       memory: {
         title: "Paměťová hra",
         text: "Jednoduchá hra, která otestuje limity vaší paměti s ikonkami.",
         tools: "React, Material-UI",
+        live: `https://willdooo.github.io/Memory-Game_App/`,
+        repo: `https://github.com/Willdooo/Memory-Game_App`,
       },
       todo: {
         title: "TO-DO aplikace",
-        text: "TO-DO aplikace v které můžete vytvořit projekty a v těchto projektech můžete nadále vytvořit jednotlivé TO-DOs.",
+        text: "TO-DO aplikace s lokálním uložištěm v které můžete vytvořit projekty a v těchto projektech můžete nadále vytvořit jednotlivé TO-DOs.",
         tools: "JS, CSS",
+        live: `https://willdooo.github.io/To-Do_App/`,
+        repo: `https://github.com/Willdooo/To-Do_App`,
       },
       calculator: {
         title: "Kalkulačka",
         text: "Kalkulačka inspirována kalkulačkou Windows10.",
         tools: "HTML, JS, CSS",
+        live: `https://willdooo.github.io/Calculator/`,
+        repo: `https://github.com/Willdooo/Calculator`,
       },
       sketch: {
         title: "Grafo",
         text: "Jednoduchá aplikace na kreslení",
         tools: "HTML, JS, CSS",
+        live: `https://willdooo.github.io/Etch-A-Sketch/`,
+        repo: `https://github.com/Willdooo/Etch-A-Sketch`,
       },
       restaurant: {
         title: "Stránka pro restauraci",
         text: "Stránka pro restauraci s třemi záložkami, které změní obsah stránky.",
         tools: "JS, HTML, CSS",
+        live: `https://willdooo.github.io/Restaurant-Page/`,
+        repo: `https://github.com/Willdooo/Restaurant-Page`,
       },
+    },
+    contacts: {
+      title: "Kontakt",
+    },
+    footer: {
+      created: "Vytvořeno Danielem Wollmannem",
     },
   };
 }
