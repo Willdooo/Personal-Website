@@ -35,9 +35,10 @@ export default function setENG() {
     },
     skills: {
       skills: "Skills",
-      languages: "Languages",
-      frameworkslibs: "Frameworks/Libraries",
+      front: "Front-end",
+      back: "Back-end",
       others: "Others",
+      soon: "Working on it!",
     },
   };
 }

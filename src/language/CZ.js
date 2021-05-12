@@ -34,10 +34,11 @@ export default function setCZ() {
          a plánuji se stát full-stack developerem.`,
     },
     skills: {
-      skills: "Dovedednosti",
-      frontend: "FRONT-END",
-      backend: "BACK-END",
-      others: "OSTATNÍ",
+      skills: "Dovednosti",
+      front: "Front-end",
+      back: "Back-end",
+      others: "Ostatní",
+      soon: "Pracuji na tom!",
     },
   };
 }
