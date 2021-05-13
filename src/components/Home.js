@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./Header";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
+import Particles from "react-particles-js";
 
 const useStyles = makeStyles(() => ({
   homeWrapper: { height: "100vh", minHeight: "500px", width: "100%" },
@@ -60,6 +61,7 @@ const useStyles = makeStyles(() => ({
     justifyContent: "center",
     textAlign: "center",
   },
+  particlesHoldder: { width: "100%", height: "100vh", position: "absolute" },
 }));
 
 const Home = (props) => {
@@ -70,6 +72,60 @@ const Home = (props) => {
     <div className={classes.homeWrapper} id="home">
       <Header language={props.language.nav} toggle={props.toggle} />
       <div className={classes.contentWrapper}>
+        <div className={classes.particlesHoldder}>
+          <Particles
+            params={{
+              particles: {
+                number: {
+                  value: 40,
+                  density: {
+                    enable: true,
+                    value_area: 800,
+                  },
+                },
+                color: { value: "#fff" },
+                size: {
+                  value: 12,
+                  random: true,
+                },
+                opacity: {
+                  value: 0.5,
+                  random: true,
+                },
+                move: {
+                  speed: 2,
+                },
+                line_linked: {
+                  enable: false,
+                },
+              },
+              interactivity: {
+                events: {
+                  onhover: {
+                    enable: true,
+                    mode: "grab",
+                  },
+                  onclick: {
+                    enable: true,
+                    mode: "repulse",
+                  },
+                  modes: {
+                    grab: {
+                      distance: 220,
+                      line_linked: {
+                        opacity: 0.6,
+                        distance: 220,
+                      },
+                    },
+                    repulse: {
+                      distance: 280,
+                    },
+                  },
+                },
+              },
+            }}
+          />
+        </div>
         <div className={classes.contentText}>
           <div className={classes.head}>
             <Typography variant="caption">alert("</Typography>

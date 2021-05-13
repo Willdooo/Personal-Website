@@ -10,6 +10,7 @@ import Drawer from "@material-ui/core/Drawer";
 
 const useStyles = makeStyles(() => ({
   navBar: {
+    zIndex: 10,
     position: "fixed",
     textAlign: "center",
     width: "100%",
@@ -44,7 +45,6 @@ const useStyles = makeStyles(() => ({
       right: 0,
     },
   },
-
   list: {
     width: 150,
   },
