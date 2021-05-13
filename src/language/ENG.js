@@ -46,19 +46,21 @@ export default function setENG() {
       website: {
         title: "Personal Website",
         text: "My personal mobile-friendly web portfolio to showcase my abilities. Do you like it?",
-        tools: "React, Material-UI, CSS",
+        tools: "React, CSS",
+        live: `https://willdooo.github.io/Personal-Website/`,
+        repo: `https://github.com/Willdooo/Personal-Website`,
       },
       cv: {
         title: "CV Creator",
         text: "You can create CVs in this application. You can add your image and download your CV as PDF.",
-        tools: "React, Material-UI, JS",
+        tools: "React, JS",
         live: `https://willdooo.github.io/odinProject_CV-Application/`,
         repo: `https://github.com/Willdooo/odinProject_CV-Application`,
       },
       eshop: {
         title: "E-Shop",
         text: "E-shop app in which you can browse through categories and add items to your shopping cart.",
-        tools: "React, React-router, Material-UI",
+        tools: "React, React-router",
         live: `https://willdooo.github.io/Shopping-Cart_App/`,
         repo: `https://github.com/Willdooo/Shopping-Cart_App`,
       },
@@ -72,7 +74,7 @@ export default function setENG() {
       memory: {
         title: "Memory Game",
         text: "Simple game to test your memory with Icons",
-        tools: "React, Material-UI",
+        tools: "React",
         live: `https://willdooo.github.io/Memory-Game_App/`,
         repo: `https://github.com/Willdooo/Memory-Game_App`,
       },

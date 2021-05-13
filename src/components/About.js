@@ -11,7 +11,6 @@ const useStyles = makeStyles(() => ({
     alignItems: "center",
     paddingTop: "4rem",
     paddingBottom: "2rem",
-    backgroundColor: "pink",
 
     "@media (max-width:1277px)": {
       display: "flex",
@@ -55,6 +54,7 @@ const useStyles = makeStyles(() => ({
   },
   smallTitle: {
     display: "none",
+
     "@media (max-width:1277px)": {
       display: "flex",
       order: 1,
@@ -73,7 +73,13 @@ const About = (props) => {
   return (
     <Grid container id="about" className={classes.aboutwrapper}>
       <Grid item className={classes.smallTitle}>
-        <Typography variant="h2">{input.about}</Typography>
+        <Typography
+          className="hvr-float-shadow"
+          variant="h2"
+          style={{ marginBottom: "1rem" }}
+        >
+          {input.about}
+        </Typography>
       </Grid>
       <Grid className={classes.imgWrapper} item xl={5} lg={5}>
         <img alt="profilepicture" src={ProfilePic} className={classes.img} />

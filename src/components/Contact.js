@@ -4,11 +4,12 @@ import Typography from "@material-ui/core/Typography";
 
 const useStyles = makeStyles(() => ({
   contactWrapper: {
+    position: "relative",
     width: "100%",
     textAlign: "center",
     paddingTop: "3rem",
-    backgroundColor: "yellow",
     height: "100vh",
+    zIndex: 10,
   },
   contentWrapper: { width: "75" },
 }));
@@ -20,7 +21,7 @@ const Contact = (props) => {
   return (
     <div id="contact" className={classes.contactWrapper}>
       <div>{input.title}</div>
-      <Typography variant="h3">wollmada@gmail.com</Typography>
+      <Typography variant="h4">wollmada@gmail.com</Typography>
       <a
         href="www.linkedin.com/in/daniel-wollmann
 "

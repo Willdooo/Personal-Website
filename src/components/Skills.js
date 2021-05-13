@@ -22,7 +22,6 @@ const useStyles = makeStyles(() => ({
   root: {
     padding: "3.5rem 1.5rem 0rem 1.5rem",
     textAlign: "center",
-    backgroundColor: "yellow",
     justifyContent: "center",
   },
   skillwrap: {
@@ -55,7 +54,7 @@ const useStyles = makeStyles(() => ({
 const Skills = (props) => {
   const classes = useStyles();
   const input = { ...props.language };
-  const [progress, setProgress] = React.useState(0);
+  const [progress, setProgress] = React.useState(50);
 
   React.useEffect(() => {
     const timer = setInterval(() => {
@@ -71,12 +70,16 @@ const Skills = (props) => {
   const CircularProgressWithLabel = (pog) => {
     return (
       <Box display="inline-flex">
-        <CircularProgress variant="determinate" {...pog} />
+        <CircularProgress
+          style={{ color: "#ffb300" }}
+          variant="determinate"
+          {...pog}
+        />
         <Box display="flex" alignItems="center" justifyContent="center">
           <Typography
             variant="caption"
             component="div"
-            color="textSecondary"
+            color="#ffb300"
             style={{ fontSize: "1rem" }}
           >{`${Math.round(pog.value)}%`}</Typography>
         </Box>
@@ -87,7 +90,13 @@ const Skills = (props) => {
   return (
     <Grid container className={classes.root} id="skills">
       <Grid item xl={12} lg={12} md={12} sm={12} xs={12}>
-        <Typography variant="h2">{input.skills}</Typography>
+        <Typography
+          className="hvr-float-shadow"
+          style={{ marginBottom: "1rem" }}
+          variant="h2"
+        >
+          {input.skills}
+        </Typography>
       </Grid>
       <Grid item xl={4} lg={4} md={6} sm={6} xs={12}>
         <Paper className={classes.skillwrap}>

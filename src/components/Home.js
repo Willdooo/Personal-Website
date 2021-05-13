@@ -14,7 +14,7 @@ const useStyles = makeStyles(() => ({
     backgroundColor: "red",
   },
   contentText: {
-    backgroundColor: "white",
+    backgroundColor: "transparent",
     display: "grid",
     gridTemplateColumns: "1fr 2fr 1fr",
     gridTemplateRows: "1fr 3fr 1fr",
@@ -29,6 +29,7 @@ const useStyles = makeStyles(() => ({
     },
   },
   head: {
+    marginRight: "2rem",
     gridArea: "head",
     display: "flex",
     justifyContent: "center",
@@ -62,6 +63,7 @@ const useStyles = makeStyles(() => ({
     textAlign: "center",
   },
   particlesHoldder: { width: "100%", height: "100vh", position: "absolute" },
+  particles: { height: "100%" },
 }));
 
 const Home = (props) => {
@@ -74,10 +76,11 @@ const Home = (props) => {
       <div className={classes.contentWrapper}>
         <div className={classes.particlesHoldder}>
           <Particles
+            className={classes.particles}
             params={{
               particles: {
                 number: {
-                  value: 40,
+                  value: 50,
                   density: {
                     enable: true,
                     value_area: 800,
@@ -85,15 +88,18 @@ const Home = (props) => {
                 },
                 color: { value: "#fff" },
                 size: {
-                  value: 12,
+                  value: 8,
                   random: true,
                 },
                 opacity: {
-                  value: 0.5,
+                  value: 0.8,
                   random: true,
+                  anim: {
+                    enable: false,
+                  },
                 },
                 move: {
-                  speed: 2,
+                  speed: 0.65,
                 },
                 line_linked: {
                   enable: false,
@@ -109,17 +115,16 @@ const Home = (props) => {
                     enable: true,
                     mode: "repulse",
                   },
-                  modes: {
-                    grab: {
-                      distance: 220,
-                      line_linked: {
-                        opacity: 0.6,
-                        distance: 220,
-                      },
+                },
+                modes: {
+                  grab: {
+                    distance: 250,
+                    line_linked: {
+                      opacity: 0.6,
                     },
-                    repulse: {
-                      distance: 280,
-                    },
+                  },
+                  repulse: {
+                    distance: 280,
                   },
                 },
               },

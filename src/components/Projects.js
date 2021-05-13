@@ -12,6 +12,7 @@ import weatherImg from "../buildingBlocks/weatherImg.png";
 import calcImg from "../buildingBlocks/calcImg.png";
 import etchImg from "../buildingBlocks/etchImg.png";
 import restImg from "../buildingBlocks/restImg.png";
+import Divider from "@material-ui/core/Divider";
 
 const useStyles = makeStyles(() => ({
   projectsWrapper: {
@@ -20,7 +21,6 @@ const useStyles = makeStyles(() => ({
     alignItems: "center",
     textAlign: "center",
     width: "100%",
-    backgroundColor: "pink",
     paddingTop: "3.5rem",
   },
   gridsContainer: {
@@ -29,8 +29,8 @@ const useStyles = makeStyles(() => ({
     paddingRight: "2rem",
   },
   itemWrap: {
-    minHeight: "500px",
-    marginBottom: "1.5rem",
+    minHeight: "550px",
+    marginBottom: "2.5rem",
     "@media (max-width:600px)": {
       minHeight: "650px",
     },
@@ -50,9 +50,17 @@ const useStyles = makeStyles(() => ({
     padding: "0rem 1rem 0rem 1rem",
     display: "flex",
     flexDirection: "column",
+    borderTop: "5px solid",
+    borderBottom: "3px solid",
+    borderRight: "1px solid",
+    justifyContent: "center",
+    "@media (max-width:960px)": {
+      borderTop: "0px",
+      borderLeft: "1px solid",
+      borderBottom: "5px solid",
+    },
   },
   textTitle: {
-    paddingTop: "2rem",
     "@media (max-width:960px)": {
       paddingTop: "1rem",
     },
@@ -60,6 +68,8 @@ const useStyles = makeStyles(() => ({
   textText: {
     textAlign: "start",
     paddingBottom: "1rem",
+    paddingTop: "1rem",
+    alignSelf: "center",
   },
 
   buttonDiv: {
@@ -67,17 +77,22 @@ const useStyles = makeStyles(() => ({
     flexDirection: "row",
     justifyContent: "center",
     "@media (max-width:960px)": {
-      padding: "0.5rem 0rem 0rem 0rem",
+      padding: "0.5rem 0rem 1rem 0rem",
     },
   },
-  button: { fontSize: "2.5rem", margin: "0rem 1rem 0rem 1rem" },
-  restProjectsWrap: { width: "75%" },
+  button: { padding: "0rem 2rem 0rem 2rem" },
+  restProjectsWrap: { width: "75%", zIndex: 10 },
   restImg: { height: "280px", padding: "0.5rem 1rem 0.25rem 1rem" },
   restDivs: {
     display: "flex",
     flexDirection: "row",
     flexWrap: "wrap",
     justifyContent: "center",
+  },
+  dividers: {
+    background: "#f8efd4",
+    height: "4px",
+    marginBottom: "1rem",
   },
 }));
 
@@ -88,7 +103,11 @@ const Projects = (props) => {
   return (
     <div id="projects" className={classes.projectsWrapper}>
       <div style={{ width: "100%" }}>
-        <Typography variant="h2" gutterBottom>
+        <Typography
+          variant="h2"
+          className="hvr-float-shadow"
+          style={{ marginBottom: "2rem" }}
+        >
           {input.title1}
         </Typography>
         <Grid container className={classes.gridsContainer}>
@@ -137,19 +156,21 @@ const Projects = (props) => {
               <div className={classes.buttonDiv}>
                 <Button
                   variant="contained"
-                  className={classes.button}
+                  className="hvr-pulse-grow"
+                  style={{ margin: "0rem 1rem 0rem 1rem" }}
                   href={input.website.live}
                   target="_blank"
                 >
-                  <FaGamepad />
+                  <FaGamepad style={{ fontSize: "2.5rem" }} />
                 </Button>
                 <Button
                   variant="contained"
-                  className={classes.button}
+                  style={{ margin: "0rem 1rem 0rem 1rem" }}
+                  className="hvr-pulse-grow"
                   href={input.website.repo}
                   target="_blank"
                 >
-                  <FaCode />
+                  <FaCode style={{ fontSize: "2.5rem" }} />
                 </Button>
               </div>
             </Grid>
@@ -199,19 +220,21 @@ const Projects = (props) => {
               <div className={classes.buttonDiv}>
                 <Button
                   variant="contained"
-                  className={classes.button}
+                  className="hvr-pulse-grow"
+                  style={{ margin: "0rem 1rem 0rem 1rem" }}
                   href={input.cv.live}
                   target="_blank"
                 >
-                  <FaGamepad />
+                  <FaGamepad style={{ fontSize: "2.5rem" }} />
                 </Button>
                 <Button
                   variant="contained"
-                  className={classes.button}
+                  className="hvr-pulse-grow"
+                  style={{ margin: "0rem 1rem 0rem 1rem" }}
                   href={input.cv.repo}
                   target="_blank"
                 >
-                  <FaCode />
+                  <FaCode style={{ fontSize: "2.5rem" }} />
                 </Button>
               </div>
             </Grid>
@@ -261,19 +284,21 @@ const Projects = (props) => {
               <div className={classes.buttonDiv}>
                 <Button
                   variant="contained"
-                  className={classes.button}
+                  className="hvr-pulse-grow"
+                  style={{ margin: "0rem 1rem 0rem 1rem" }}
                   href={input.eshop.live}
                   target="_blank"
                 >
-                  <FaGamepad />
+                  <FaGamepad style={{ fontSize: "2.5rem" }} />
                 </Button>
                 <Button
                   variant="contained"
-                  className={classes.button}
+                  className="hvr-pulse-grow"
+                  style={{ margin: "0rem 1rem 0rem 1rem" }}
                   href={input.eshop.repo}
                   target="_blank"
                 >
-                  <FaCode />
+                  <FaCode style={{ fontSize: "2.5rem" }} />
                 </Button>
               </div>
             </Grid>
@@ -300,7 +325,10 @@ const Projects = (props) => {
             >
               <div
                 className={classes.divImg}
-                style={{ backgroundImage: `url(${memoryImg})`, height: "100%" }}
+                style={{
+                  backgroundImage: `url(${memoryImg})`,
+                  height: "100%",
+                }}
               />
             </Grid>
             <Grid
@@ -324,19 +352,21 @@ const Projects = (props) => {
               <div className={classes.buttonDiv}>
                 <Button
                   variant="contained"
-                  className={classes.button}
+                  className="hvr-pulse-grow"
+                  style={{ margin: "0rem 1rem 0rem 1rem" }}
                   href={input.memory.live}
                   target="_blank"
                 >
-                  <FaGamepad />
+                  <FaGamepad style={{ fontSize: "2.5rem" }} />
                 </Button>
                 <Button
                   variant="contained"
-                  className={classes.button}
+                  className="hvr-pulse-grow"
+                  style={{ margin: "0rem 1rem 0rem 1rem" }}
                   href={input.memory.repo}
                   target="_blank"
                 >
-                  <FaCode />
+                  <FaCode style={{ fontSize: "2.5rem" }} />
                 </Button>
               </div>
             </Grid>
@@ -386,19 +416,21 @@ const Projects = (props) => {
               <div className={classes.buttonDiv}>
                 <Button
                   variant="contained"
-                  className={classes.button}
+                  className="hvr-pulse-grow"
+                  style={{ margin: "0rem 1rem 0rem 1rem" }}
                   href={input.todo.live}
                   target="_blank"
                 >
-                  <FaGamepad />
+                  <FaGamepad style={{ fontSize: "2.5rem" }} />
                 </Button>
                 <Button
                   variant="contained"
-                  className={classes.button}
+                  className="hvr-pulse-grow"
+                  style={{ margin: "0rem 1rem 0rem 1rem" }}
                   href={input.todo.repo}
                   target="_blank"
                 >
-                  <FaCode />
+                  <FaCode style={{ fontSize: "2.5rem" }} />
                 </Button>
               </div>
             </Grid>
@@ -452,19 +484,21 @@ const Projects = (props) => {
               <div className={classes.buttonDiv}>
                 <Button
                   variant="contained"
-                  className={classes.button}
+                  className="hvr-pulse-grow"
+                  style={{ margin: "0rem 1rem 0rem 1rem" }}
                   href={input.weather.live}
                   target="_blank"
                 >
-                  <FaGamepad />
+                  <FaGamepad style={{ fontSize: "2.5rem" }} />
                 </Button>
                 <Button
                   variant="contained"
-                  className={classes.button}
+                  className="hvr-pulse-grow"
+                  style={{ margin: "0rem 1rem 0rem 1rem" }}
                   href={input.weather.repo}
                   target="_blank"
                 >
-                  <FaCode />
+                  <FaCode style={{ fontSize: "2.5rem" }} />
                 </Button>
               </div>
             </Grid>
@@ -472,6 +506,14 @@ const Projects = (props) => {
           {/** one item*/}
         </Grid>
       </div>
+      <Divider
+        style={{
+          height: "1px",
+          background: "#f8efd4",
+          width: "60%",
+          marginBottom: "1rem",
+        }}
+      />
       <div className={classes.restProjectsWrap}>
         <Typography variant="h4" gutterBottom>
           {input.title2}
@@ -482,24 +524,33 @@ const Projects = (props) => {
               <img alt="pic" src={calcImg} className={classes.restImg} />
             </a>
             <a href={input.calculator.repo} target="_blank" rel="noreferrer">
-              <Typography variant="h5">{input.calculator.title}</Typography>
-            </a>
+              <Typography variant="h5">
+                {input.calculator.title} <FaCode />
+              </Typography>
+            </a>{" "}
+            <Divider className={classes.dividers} />
           </div>
           <div>
             <a href={input.sketch.live} target="_blank" rel="noreferrer">
               <img alt="pic" src={etchImg} className={classes.restImg} />
             </a>
             <a href={input.sketch.repo} target="_blank" rel="noreferrer">
-              <Typography variant="h5">{input.sketch.title}</Typography>
-            </a>
+              <Typography variant="h5">
+                {input.sketch.title} <FaCode />
+              </Typography>
+            </a>{" "}
+            <Divider className={classes.dividers} />
           </div>
           <div>
             <a href={input.restaurant.live} target="_blank" rel="noreferrer">
               <img alt="pic" src={restImg} className={classes.restImg} />{" "}
             </a>
             <a href={input.restaurant.repo} target="_blank" rel="noreferrer">
-              <Typography variant="h5">{input.restaurant.title}</Typography>
+              <Typography variant="h5">
+                {input.restaurant.title} <FaCode />
+              </Typography>
             </a>
+            <Divider className={classes.dividers} />
           </div>
         </div>
       </div>

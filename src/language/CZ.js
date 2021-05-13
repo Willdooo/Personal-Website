@@ -46,19 +46,21 @@ export default function setCZ() {
       website: {
         title: "Osobní web",
         text: "Můj osobní web s portfóliem projektů. Líbí se Vám? Je mobile-friendly",
-        tools: "React, CSS, Material-UI",
+        tools: "React, CSS",
+        live: `https://willdooo.github.io/Personal-Website/`,
+        repo: `https://github.com/Willdooo/Personal-Website`,
       },
       cv: {
         title: "Aplikace k vytváření životopisů",
         text: "V této aplikaci můžete vytvořit svůj životopis s Vaší fotkou a následně Váš životopis stáhnout jako PDF.",
-        tools: "React, Material-UI, JS",
+        tools: "React, JS",
         live: `https://willdooo.github.io/odinProject_CV-Application/`,
         repo: `https://github.com/Willdooo/odinProject_CV-Application`,
       },
       eshop: {
         title: "E-shop",
         text: "E-shop, v kterém můžete přidávat položky do košíku.",
-        tools: "React, React-router, Material-UI",
+        tools: "React, React-router",
         live: `https://willdooo.github.io/Shopping-Cart_App/`,
         repo: `https://github.com/Willdooo/Shopping-Cart_App`,
       },
@@ -72,7 +74,7 @@ export default function setCZ() {
       memory: {
         title: "Paměťová hra",
         text: "Jednoduchá hra, která otestuje limity vaší paměti s ikonkami.",
-        tools: "React, Material-UI",
+        tools: "React",
         live: `https://willdooo.github.io/Memory-Game_App/`,
         repo: `https://github.com/Willdooo/Memory-Game_App`,
       },
