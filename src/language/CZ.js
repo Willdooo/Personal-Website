@@ -31,7 +31,7 @@ export default function setCZ() {
       text2: `Kdo tedy doopravdy
         jsem? Jsem pracovitý self-taught front-end
          developer se zápalem do programování a vytváření
-         funkčních a interaktivních uživatelských rozhráních.
+         funkčních a interaktivních uživatelských rozhraních.
         A tohle je začátek mé cesty k
          práci full-stack developera.`,
     },
