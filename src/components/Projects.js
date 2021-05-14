@@ -12,6 +12,7 @@ import weatherImg from "../buildingBlocks/weatherImg.png";
 import calcImg from "../buildingBlocks/calcImg.png";
 import etchImg from "../buildingBlocks/etchImg.png";
 import restImg from "../buildingBlocks/restImg.png";
+import webImg from "../buildingBlocks/webImg.png";
 import Divider from "@material-ui/core/Divider";
 
 const useStyles = makeStyles(() => ({
@@ -31,6 +32,9 @@ const useStyles = makeStyles(() => ({
   itemWrap: {
     minHeight: "550px",
     marginBottom: "2.5rem",
+    "@media (max-width:1500px)": {
+      marginBottom: "3.5rem",
+    },
     "@media (max-width:600px)": {
       minHeight: "650px",
     },
@@ -80,7 +84,9 @@ const useStyles = makeStyles(() => ({
       padding: "0.5rem 0rem 1rem 0rem",
     },
   },
-  button: { padding: "0rem 2rem 0rem 2rem" },
+  button: {
+    padding: "0rem 2rem 0rem 2rem",
+  },
   restProjectsWrap: { width: "75%", zIndex: 10 },
   restImg: { height: "280px", padding: "0.5rem 1rem 0.25rem 1rem" },
   restDivs: {
@@ -106,7 +112,11 @@ const Projects = (props) => {
         <Typography
           variant="h2"
           className="hvr-float-shadow"
-          style={{ marginBottom: "2rem" }}
+          style={{
+            marginBottom: "2rem",
+            fontFamily: "Montserrat",
+            fontWeight: "800",
+          }}
         >
           {input.title1}
         </Typography>
@@ -132,7 +142,7 @@ const Projects = (props) => {
             >
               <div
                 className={classes.divImg}
-                style={{ backgroundImage: `url(${cvImg})`, height: "100%" }}
+                style={{ backgroundImage: `url(${webImg})`, height: "100%" }}
               />
             </Grid>
             <Grid
@@ -157,7 +167,11 @@ const Projects = (props) => {
                 <Button
                   variant="contained"
                   className="hvr-pulse-grow"
-                  style={{ margin: "0rem 1rem 0rem 1rem" }}
+                  style={{
+                    margin: "0rem 1rem 0rem 1rem",
+                    color: "rgb(255, 202, 46)",
+                    backgroundColor: "#404040",
+                  }}
                   href={input.website.live}
                   target="_blank"
                 >
@@ -165,7 +179,11 @@ const Projects = (props) => {
                 </Button>
                 <Button
                   variant="contained"
-                  style={{ margin: "0rem 1rem 0rem 1rem" }}
+                  style={{
+                    margin: "0rem 1rem 0rem 1rem",
+                    color: "rgb(255, 238, 188)",
+                    backgroundColor: "#404040",
+                  }}
                   className="hvr-pulse-grow"
                   href={input.website.repo}
                   target="_blank"
@@ -221,7 +239,11 @@ const Projects = (props) => {
                 <Button
                   variant="contained"
                   className="hvr-pulse-grow"
-                  style={{ margin: "0rem 1rem 0rem 1rem" }}
+                  style={{
+                    margin: "0rem 1rem 0rem 1rem",
+                    color: "rgb(255, 202, 46)",
+                    backgroundColor: "#404040",
+                  }}
                   href={input.cv.live}
                   target="_blank"
                 >
@@ -230,7 +252,11 @@ const Projects = (props) => {
                 <Button
                   variant="contained"
                   className="hvr-pulse-grow"
-                  style={{ margin: "0rem 1rem 0rem 1rem" }}
+                  style={{
+                    margin: "0rem 1rem 0rem 1rem",
+                    color: "rgb(255, 238, 188)",
+                    backgroundColor: "#404040",
+                  }}
                   href={input.cv.repo}
                   target="_blank"
                 >
@@ -285,7 +311,11 @@ const Projects = (props) => {
                 <Button
                   variant="contained"
                   className="hvr-pulse-grow"
-                  style={{ margin: "0rem 1rem 0rem 1rem" }}
+                  style={{
+                    margin: "0rem 1rem 0rem 1rem",
+                    color: "rgb(255, 202, 46)",
+                    backgroundColor: "#404040",
+                  }}
                   href={input.eshop.live}
                   target="_blank"
                 >
@@ -294,7 +324,11 @@ const Projects = (props) => {
                 <Button
                   variant="contained"
                   className="hvr-pulse-grow"
-                  style={{ margin: "0rem 1rem 0rem 1rem" }}
+                  style={{
+                    margin: "0rem 1rem 0rem 1rem",
+                    color: "rgb(255, 238, 188)",
+                    backgroundColor: "#404040",
+                  }}
                   href={input.eshop.repo}
                   target="_blank"
                 >
@@ -353,7 +387,11 @@ const Projects = (props) => {
                 <Button
                   variant="contained"
                   className="hvr-pulse-grow"
-                  style={{ margin: "0rem 1rem 0rem 1rem" }}
+                  style={{
+                    margin: "0rem 1rem 0rem 1rem",
+                    color: "rgb(255, 202, 46)",
+                    backgroundColor: "#404040",
+                  }}
                   href={input.memory.live}
                   target="_blank"
                 >
@@ -362,7 +400,11 @@ const Projects = (props) => {
                 <Button
                   variant="contained"
                   className="hvr-pulse-grow"
-                  style={{ margin: "0rem 1rem 0rem 1rem" }}
+                  style={{
+                    margin: "0rem 1rem 0rem 1rem",
+                    color: "rgb(255, 238, 188)",
+                    backgroundColor: "#404040",
+                  }}
                   href={input.memory.repo}
                   target="_blank"
                 >
@@ -380,6 +422,7 @@ const Projects = (props) => {
             md={12}
             sm={12}
             xs={12}
+            style={{ marginBottom: "4rem" }}
           >
             <Grid
               className={classes.itemPartImg}
@@ -417,7 +460,11 @@ const Projects = (props) => {
                 <Button
                   variant="contained"
                   className="hvr-pulse-grow"
-                  style={{ margin: "0rem 1rem 0rem 1rem" }}
+                  style={{
+                    margin: "0rem 1rem 0rem 1rem",
+                    color: "rgb(255, 202, 46)",
+                    backgroundColor: "#404040",
+                  }}
                   href={input.todo.live}
                   target="_blank"
                 >
@@ -426,7 +473,11 @@ const Projects = (props) => {
                 <Button
                   variant="contained"
                   className="hvr-pulse-grow"
-                  style={{ margin: "0rem 1rem 0rem 1rem" }}
+                  style={{
+                    margin: "0rem 1rem 0rem 1rem",
+                    color: "rgb(255, 238, 188)",
+                    backgroundColor: "#404040",
+                  }}
                   href={input.todo.repo}
                   target="_blank"
                 >
@@ -485,7 +536,11 @@ const Projects = (props) => {
                 <Button
                   variant="contained"
                   className="hvr-pulse-grow"
-                  style={{ margin: "0rem 1rem 0rem 1rem" }}
+                  style={{
+                    margin: "0rem 1rem 0rem 1rem",
+                    color: "rgb(255, 202, 46)",
+                    backgroundColor: "#404040",
+                  }}
                   href={input.weather.live}
                   target="_blank"
                 >
@@ -494,7 +549,11 @@ const Projects = (props) => {
                 <Button
                   variant="contained"
                   className="hvr-pulse-grow"
-                  style={{ margin: "0rem 1rem 0rem 1rem" }}
+                  style={{
+                    margin: "0rem 1rem 0rem 1rem",
+                    color: "rgb(255, 238, 188)",
+                    backgroundColor: "#404040",
+                  }}
                   href={input.weather.repo}
                   target="_blank"
                 >

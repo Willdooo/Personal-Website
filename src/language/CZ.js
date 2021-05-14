@@ -74,7 +74,7 @@ export default function setCZ() {
       memory: {
         title: "Paměťová hra",
         text: "Jednoduchá hra, která otestuje limity vaší paměti s ikonkami.",
-        tools: "React",
+        tools: "React, JS",
         live: `https://willdooo.github.io/Memory-Game_App/`,
         repo: `https://github.com/Willdooo/Memory-Game_App`,
       },

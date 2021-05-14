@@ -92,7 +92,11 @@ const Skills = (props) => {
       <Grid item xl={12} lg={12} md={12} sm={12} xs={12}>
         <Typography
           className="hvr-float-shadow"
-          style={{ marginBottom: "1rem" }}
+          style={{
+            marginBottom: "1rem",
+            fontFamily: "Montserrat",
+            fontWeight: "800",
+          }}
           variant="h2"
         >
           {input.skills}

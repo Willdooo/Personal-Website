@@ -27,6 +27,8 @@ const useStyles = makeStyles(() => ({
     },
   },
   title: {
+    fontFamily: "Montserrat",
+    fontWeight: "800",
     marginBottom: "1rem",
     "@media (max-width:1277px)": {
       display: "none",
@@ -61,10 +63,15 @@ const useStyles = makeStyles(() => ({
       display: "flex",
       order: 1,
       paddingBottom: "1rem",
+      fontFamily: "Montserrat",
+      fontWeight: "800",
     },
   },
   text2: {
+    fontFamily: "Montserrat",
     textAlign: "center",
+    fontSize: "1.5rem",
+    fontWeight: "800",
   },
 }));
 
@@ -78,7 +85,11 @@ const About = (props) => {
         <Typography
           className="hvr-float-shadow"
           variant="h2"
-          style={{ marginBottom: "1rem" }}
+          style={{
+            marginBottom: "1rem",
+            fontFamily: "Montserrat",
+            fontWeight: "800",
+          }}
         >
           {input.about}
         </Typography>
@@ -88,9 +99,13 @@ const About = (props) => {
       </Grid>
       <Grid item xl={7} lg={7} className={classes.textwrapper}>
         <div className={classes.title}>
-          <Typography className="hvr-float-shadow" variant="h2">
+          <Typography
+            className="hvr-float-shadow"
+            variant="h2"
+            style={{ fontFamily: "Montserrat", fontWeight: "800" }}
+          >
             {input.about}
-          </Typography>{" "}
+          </Typography>
         </div>
         <Typography className={classes.text}>
           {input.text} <br />

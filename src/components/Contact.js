@@ -1,6 +1,10 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
+import { FaGithub, FaLinkedin, FaRegFilePdf } from "react-icons/fa";
+import { FiMail } from "react-icons/fi";
+import cvENG from "../buildingBlocks/cvProgrammingENG.pdf";
+import cvCZ from "../buildingBlocks/cvProgrammingCZ.pdf";
 
 const useStyles = makeStyles(() => ({
   contactWrapper: {
@@ -9,30 +13,77 @@ const useStyles = makeStyles(() => ({
     textAlign: "center",
     paddingTop: "3rem",
     height: "100vh",
-    zIndex: 10,
+    zIndex: 9,
   },
   contentWrapper: { width: "75" },
+  infoWrap: {
+    display: "flex",
+    flexDirection: "column",
+    height: "60%",
+    justifyContent: "space-evenly",
+  },
 }));
 
 const Contact = (props) => {
   const classes = useStyles();
   const input = { ...props.language };
+  const setCV = () => {
+    if (input.title === "Kontakt") {
+      return cvCZ;
+    } else {
+      return cvENG;
+    }
+  };
 
   return (
     <div id="contact" className={classes.contactWrapper}>
-      <div>{input.title}</div>
-      <Typography variant="h4">wollmada@gmail.com</Typography>
-      <a
-        href="www.linkedin.com/in/daniel-wollmann
-"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <Typography variant="h3">LinkedIn</Typography>
-      </a>
-      <a href="https://github.com/Willdooo" target="_blank" rel="noreferrer">
-        <Typography variant="h3">GitHub</Typography>{" "}
-      </a>
+      <div>
+        <Typography
+          className="hvr-float-shadow"
+          variant="h2"
+          style={{
+            paddingTop: "2rem",
+            marginBottom: "2rem",
+            fontFamily: "Montserrat",
+            fontWeight: "800",
+          }}
+        >
+          {input.title}
+        </Typography>
+      </div>
+      <div className={classes.infoWrap}>
+        <Typography variant="h3">
+          wollmada@gmail.com <FiMail />
+        </Typography>
+
+        <Typography variant="h3">
+          <a
+            href="https://linkedin.com/in/daniel-wollmann"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {" "}
+            LinkedIn <FaLinkedin />
+          </a>
+        </Typography>
+
+        <Typography variant="h3">
+          <a
+            href="https://github.com/Willdooo"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {" "}
+            GitHub <FaGithub />
+          </a>
+        </Typography>
+
+        <Typography variant="h3">
+          <a href={setCV()} target="_blank" rel="noreferrer">
+            CV <FaRegFilePdf />{" "}
+          </a>
+        </Typography>
+      </div>
     </div>
   );
 };

@@ -11,9 +11,10 @@ const useStyles = makeStyles(() => ({
     justifyContent: "center",
     alignItems: "center",
     height: "inherit",
-    backgroundColor: "red",
+    backgroundImage: "linear-gradient(black 80%, #1b1b1b)",
   },
   contentText: {
+    color: "white",
     backgroundColor: "transparent",
     display: "grid",
     gridTemplateColumns: "1fr 2fr 1fr",
@@ -29,7 +30,6 @@ const useStyles = makeStyles(() => ({
     },
   },
   head: {
-    marginRight: "2rem",
     gridArea: "head",
     display: "flex",
     justifyContent: "center",
@@ -64,6 +64,7 @@ const useStyles = makeStyles(() => ({
   },
   particlesHoldder: { width: "100%", height: "100vh", position: "absolute" },
   particles: { height: "100%" },
+  alert: { color: "#f8efd4", opacity: 0.5, fontFamily: "JetBrains Mono" },
 }));
 
 const Home = (props) => {
@@ -133,9 +134,20 @@ const Home = (props) => {
         </div>
         <div className={classes.contentText}>
           <div className={classes.head}>
-            <Typography variant="caption">alert("</Typography>
-            <Typography variant="h2">{input.greetings}</Typography>
-            <Typography variant="caption">")</Typography>
+            <Typography className={classes.alert} variant="caption">
+              alert("
+            </Typography>
+            <Typography
+              style={{
+                fontFamily: "Montserrat",
+              }}
+              variant="h2"
+            >
+              {input.greetings}
+            </Typography>
+            <Typography className={classes.alert} variant="caption">
+              ")
+            </Typography>
           </div>
 
           <div className={classes.greet}>
@@ -147,7 +159,15 @@ const Home = (props) => {
             <Typography variant="h1">{input.surname}</Typography>
           </div>
           <div className={classes.foot}>
-            <Typography variant="h2">{input.frontend}</Typography>
+            <Typography
+              style={{
+                fontFamily: "Montserrat",
+                fontWeight: "600",
+              }}
+              variant="h2"
+            >
+              {input.frontend}
+            </Typography>
           </div>
         </div>
       </div>

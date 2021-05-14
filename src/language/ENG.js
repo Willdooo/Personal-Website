@@ -74,7 +74,7 @@ export default function setENG() {
       memory: {
         title: "Memory Game",
         text: "Simple game to test your memory with Icons",
-        tools: "React",
+        tools: "React, JS",
         live: `https://willdooo.github.io/Memory-Game_App/`,
         repo: `https://github.com/Willdooo/Memory-Game_App`,
       },

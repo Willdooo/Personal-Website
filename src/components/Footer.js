@@ -5,9 +5,10 @@ import IconButton from "@material-ui/core/IconButton";
 
 const useStyles = makeStyles(() => ({
   footer: {
-    padding: "1.5rem 0rem 0.5rem 0rem",
+    padding: "0.5rem 0rem 0rem 0rem",
     textAlign: "center",
     zIndex: 100,
+    fontFamily: "JetBrains Mono",
   },
 }));
 
