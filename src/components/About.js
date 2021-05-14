@@ -89,6 +89,7 @@ const About = (props) => {
             marginBottom: "1rem",
             fontFamily: "Montserrat",
             fontWeight: "800",
+            textDecoration: "underline",
           }}
         >
           {input.about}
@@ -102,7 +103,11 @@ const About = (props) => {
           <Typography
             className="hvr-float-shadow"
             variant="h2"
-            style={{ fontFamily: "Montserrat", fontWeight: "800" }}
+            style={{
+              fontFamily: "Montserrat",
+              fontWeight: "800",
+              textDecoration: "underline",
+            }}
           >
             {input.about}
           </Typography>

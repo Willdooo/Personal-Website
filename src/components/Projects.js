@@ -32,6 +32,17 @@ const useStyles = makeStyles(() => ({
   itemWrap: {
     minHeight: "550px",
     marginBottom: "2.5rem",
+    borderTop: "5px solid",
+    borderBottom: "3px solid",
+    borderRight: "1px solid",
+    borderLeft: "1px solid",
+
+    "@media (max-width:960px)": {
+      borderTop: "0px",
+      borderLeft: "1px solid",
+      borderBottom: "5px solid",
+      borderRight: "1px solid",
+    },
     "@media (max-width:1500px)": {
       marginBottom: "3.5rem",
     },
@@ -54,15 +65,7 @@ const useStyles = makeStyles(() => ({
     padding: "0rem 1rem 0rem 1rem",
     display: "flex",
     flexDirection: "column",
-    borderTop: "5px solid",
-    borderBottom: "3px solid",
-    borderRight: "1px solid",
     justifyContent: "center",
-    "@media (max-width:960px)": {
-      borderTop: "0px",
-      borderLeft: "1px solid",
-      borderBottom: "5px solid",
-    },
   },
   textTitle: {
     "@media (max-width:960px)": {
@@ -116,6 +119,7 @@ const Projects = (props) => {
             marginBottom: "2rem",
             fontFamily: "Montserrat",
             fontWeight: "800",
+            textDecoration: "underline",
           }}
         >
           {input.title1}

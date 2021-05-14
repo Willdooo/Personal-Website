@@ -29,9 +29,11 @@ export default function setCZ() {
        abych zjistil, že po škole a vlastně ani během
         školy nechci praktikovat právo. `,
       text2: `Kdo tedy doopravdy
-        jsem? Jsem začínající self-taught front-end
-         developer
-         a plánuji se stát full-stack developerem.`,
+        jsem? Jsem pracovitý self-taught front-end
+         developer se zápalem do programování a vytváření
+         funkčních a interaktivních uživatelských rozhráních.
+        A tohle je začátek mé cesty k
+         práci full-stack developera.`,
     },
     skills: {
       skills: "Dovednosti",

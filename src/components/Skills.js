@@ -30,6 +30,8 @@ const useStyles = makeStyles(() => ({
     alignItems: "center",
     margin: "1rem 1.5rem 1rem 1.5rem",
     minHeight: "300px",
+    background: "rgb(255 255 255 / 12%)",
+    color: "#f8efd4",
   },
   bigIcon: {
     fontSize: "6rem",
@@ -96,6 +98,7 @@ const Skills = (props) => {
             marginBottom: "1rem",
             fontFamily: "Montserrat",
             fontWeight: "800",
+            textDecoration: "underline",
           }}
           variant="h2"
         >

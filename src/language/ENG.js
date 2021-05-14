@@ -29,8 +29,10 @@ export default function setENG() {
       text1: `It took me three years to realize
        that I don't want to practice law after
         the UNI or even during the UNI.`,
-      text2: `So who am I? I am a self-taught front-end
-       developer  and I aspire to be a
+      text2: `So who am I? I am a hardworking self-taught front-end
+       developer with passion for programming and creating
+       functional and interatctive UI.
+       This is beggining of my path to become a 
         full-stack developer.`,
     },
     skills: {

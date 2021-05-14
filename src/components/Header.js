@@ -126,6 +126,14 @@ const Header = (props) => {
       return "inline-flex";
     }
   };
+  const handleDisplayNav = (scrollPosition) => {
+    if (scrollPosition > 200 && scrollPosition < 900) {
+      return "none";
+    } else {
+      return "grid";
+    }
+  };
+
   const list = (anchor) => (
     <div
       className={clsx(classes.list)}
@@ -213,6 +221,7 @@ const Header = (props) => {
         style={{
           backgroundColor: handleChangeBG(scrollPosition),
           color: handleChangeColor(scrollPosition),
+          display: handleDisplayNav(scrollPosition),
         }}
       >
         <div></div>

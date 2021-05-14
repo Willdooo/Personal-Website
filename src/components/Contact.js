@@ -5,6 +5,7 @@ import { FaGithub, FaLinkedin, FaRegFilePdf } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 import cvENG from "../buildingBlocks/cvProgrammingENG.pdf";
 import cvCZ from "../buildingBlocks/cvProgrammingCZ.pdf";
+import Divider from "@material-ui/core/Divider";
 
 const useStyles = makeStyles(() => ({
   contactWrapper: {
@@ -19,7 +20,7 @@ const useStyles = makeStyles(() => ({
   infoWrap: {
     display: "flex",
     flexDirection: "column",
-    height: "60%",
+    height: "80%",
     justifyContent: "space-evenly",
   },
 }));
@@ -46,6 +47,7 @@ const Contact = (props) => {
             marginBottom: "2rem",
             fontFamily: "Montserrat",
             fontWeight: "800",
+            textDecoration: "underline",
           }}
         >
           {input.title}
