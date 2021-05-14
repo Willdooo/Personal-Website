@@ -7,6 +7,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 
 import clsx from "clsx";
 import Drawer from "@material-ui/core/Drawer";
+import { render } from "@testing-library/react";
 
 const useStyles = makeStyles(() => ({
   navBar: {
@@ -29,6 +30,7 @@ const useStyles = makeStyles(() => ({
   },
   ul: {
     display: "flex",
+    color: "white",
     justifyContent: "center",
     flexGrow: "1",
     fontWeight: 900,
@@ -112,21 +114,22 @@ const Header = (props) => {
       return "transparent";
     }
   };
-  const handleChangeColor = (scrollPosition) => {
-    if (scrollPosition > 200 && scrollPosition < 900) {
-      return "transparent";
-    } else {
-      return "white";
-    }
-  };
+
   const handleDisplay = (scrollPosition) => {
     if (scrollPosition > 200 && scrollPosition < 900) {
       return "none";
     } else {
-      return "inline-flex";
+      return "flex";
     }
   };
   const handleDisplayNav = (scrollPosition) => {
+    if (scrollPosition > 200 && scrollPosition < 900) {
+      return "none";
+    } else {
+      return "grid";
+    }
+  };
+  const handleDisplayNavContent = (scrollPosition) => {
     if (scrollPosition > 200 && scrollPosition < 900) {
       return "none";
     } else {
@@ -220,12 +223,14 @@ const Header = (props) => {
         className={classes.navBar}
         style={{
           backgroundColor: handleChangeBG(scrollPosition),
-          color: handleChangeColor(scrollPosition),
           // display: handleDisplayNav(scrollPosition),
         }}
       >
         <div></div>
-        <ul className={classes.ul} style={{}}>
+        <ul
+          className={classes.ul}
+          style={{ display: handleDisplay(scrollPosition) }}
+        >
           <li>
             <a href="#home">
               <Typography

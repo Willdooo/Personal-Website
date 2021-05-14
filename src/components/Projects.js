@@ -47,7 +47,7 @@ const useStyles = makeStyles(() => ({
       marginBottom: "3.5rem",
     },
     "@media (max-width:600px)": {
-      minHeight: "650px",
+      minHeight: "750px",
     },
   },
   itemPartImg: {
@@ -201,6 +201,11 @@ const Projects = (props) => {
           <Grid
             className={classes.itemWrap}
             container
+            style={{
+              "@media (max-width:600)": {
+                paddingBottom: "4rem",
+              },
+            }}
             xl={10}
             lg={10}
             md={12}
