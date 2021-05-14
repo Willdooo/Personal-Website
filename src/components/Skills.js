@@ -98,7 +98,7 @@ const Skills = (props) => {
           {input.skills}
         </Typography>
       </Grid>
-      <Grid item xl={4} lg={4} md={6} sm={6} xs={12}>
+      <Grid className="hvr-bob" item xl={4} lg={4} md={6} sm={6} xs={12}>
         <Paper className={classes.skillwrap}>
           <Typography variant="h3"> {input.front}</Typography>
           <Icon className={classes.bigIcon}>
@@ -132,7 +132,7 @@ const Skills = (props) => {
           </div>
         </Paper>
       </Grid>
-      <Grid item xl={4} lg={4} md={6} sm={6} xs={12}>
+      <Grid className="hvr-bob" item xl={4} lg={4} md={6} sm={6} xs={12}>
         <Paper className={classes.skillwrap}>
           <Typography variant="h3"> {input.back}</Typography>
           <Icon className={classes.bigIcon}>
@@ -148,7 +148,7 @@ const Skills = (props) => {
           <CircularProgressWithLabel value={progress} />
         </Paper>
       </Grid>
-      <Grid item xl={4} lg={4} md={6} sm={6} xs={12}>
+      <Grid className="hvr-bob" item xl={4} lg={4} md={6} sm={6} xs={12}>
         <Paper className={classes.skillwrap}>
           <Typography variant="h3"> {input.others}</Typography>
           <Icon className={classes.bigIcon}>

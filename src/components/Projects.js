@@ -144,7 +144,7 @@ const Projects = (props) => {
               sm={12}
               xs={12}
             >
-              <Typography className={classes.textTitle} variant="h7">
+              <Typography className={classes.textTitle} variant="h5">
                 {input.website.title}
               </Typography>
               <Typography className={classes.textText} variant="body1">
@@ -208,7 +208,7 @@ const Projects = (props) => {
               sm={12}
               xs={12}
             >
-              <Typography className={classes.textTitle} variant="h7">
+              <Typography className={classes.textTitle} variant="h5">
                 {input.cv.title}
               </Typography>
               <Typography className={classes.textText} variant="body1">
@@ -272,7 +272,7 @@ const Projects = (props) => {
               sm={12}
               xs={12}
             >
-              <Typography className={classes.textTitle} variant="h7">
+              <Typography className={classes.textTitle} variant="h5">
                 {input.eshop.title}
               </Typography>
               <Typography className={classes.textText} variant="body1">
@@ -340,7 +340,7 @@ const Projects = (props) => {
               sm={12}
               xs={12}
             >
-              <Typography className={classes.textTitle} variant="h7">
+              <Typography className={classes.textTitle} variant="h5">
                 {input.memory.title}
               </Typography>
               <Typography className={classes.textText} variant="body1">
@@ -404,7 +404,7 @@ const Projects = (props) => {
               sm={12}
               xs={12}
             >
-              <Typography className={classes.textTitle} variant="h7">
+              <Typography className={classes.textTitle} variant="h5">
                 {input.todo.title}
               </Typography>
               <Typography className={classes.textText} variant="body1">
@@ -472,7 +472,7 @@ const Projects = (props) => {
               sm={12}
               xs={12}
             >
-              <Typography className={classes.textTitle} variant="h7">
+              <Typography className={classes.textTitle} variant="h5">
                 {input.weather.title}
               </Typography>
               <Typography className={classes.textText} variant="body1">

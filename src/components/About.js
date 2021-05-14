@@ -11,6 +11,7 @@ const useStyles = makeStyles(() => ({
     alignItems: "center",
     paddingTop: "4rem",
     paddingBottom: "2rem",
+    zIndex: 10,
 
     "@media (max-width:1277px)": {
       display: "flex",
@@ -26,6 +27,7 @@ const useStyles = makeStyles(() => ({
     },
   },
   title: {
+    marginBottom: "1rem",
     "@media (max-width:1277px)": {
       display: "none",
     },
@@ -85,9 +87,11 @@ const About = (props) => {
         <img alt="profilepicture" src={ProfilePic} className={classes.img} />
       </Grid>
       <Grid item xl={7} lg={7} className={classes.textwrapper}>
-        <Typography className={classes.title} variant="h2">
-          {input.about}
-        </Typography>
+        <div className={classes.title}>
+          <Typography className="hvr-float-shadow" variant="h2">
+            {input.about}
+          </Typography>{" "}
+        </div>
         <Typography className={classes.text}>
           {input.text} <br />
           {input.text1}
