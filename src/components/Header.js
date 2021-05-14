@@ -130,7 +130,7 @@ const Header = (props) => {
     if (scrollPosition > 200 && scrollPosition < 900) {
       return "none";
     } else {
-      return "grid";
+      return "flex";
     }
   };
 
@@ -221,11 +221,11 @@ const Header = (props) => {
         style={{
           backgroundColor: handleChangeBG(scrollPosition),
           color: handleChangeColor(scrollPosition),
-          display: handleDisplayNav(scrollPosition),
+          // display: handleDisplayNav(scrollPosition),
         }}
       >
         <div></div>
-        <ul className={classes.ul}>
+        <ul className={classes.ul} style={{}}>
           <li>
             <a href="#home">
               <Typography

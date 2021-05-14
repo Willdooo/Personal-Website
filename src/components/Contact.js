@@ -53,7 +53,7 @@ const Contact = (props) => {
         </Typography>
       </div>
       <div className={classes.infoWrap}>
-        <Typography variant="h3">
+        <Typography variant="h4">
           wollmada@gmail.com <FiMail />
         </Typography>
 
