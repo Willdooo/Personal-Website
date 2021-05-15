@@ -95,7 +95,13 @@ const About = (props) => {
           {input.about}
         </Typography>
       </Grid>
-      <Grid className={classes.imgWrapper} item xl={5} lg={5}>
+      <Grid
+        style={{ display: "none" }}
+        className={classes.imgWrapper}
+        item
+        xl={5}
+        lg={5}
+      >
         <img alt="profilepicture" src={ProfilePic} className={classes.img} />
       </Grid>
       <Grid item xl={7} lg={7} className={classes.textwrapper}>
