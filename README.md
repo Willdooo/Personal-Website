@@ -1,17 +1,39 @@
-# Getting Started with Create React App
+# Welcome to Personal Website 👋
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+My personal website with portfolio of my projects. This project is going to keep changing as my front-end developer skills grows.
 
-In the project directory, you can run:
+Project made as part of [The Odin Project's curriculum](https://www.theodinproject.com/paths/full-stack-javascript/courses/getting-hired/lessons/building-your-personal-website).
 
-### `npm install`
+## Development
 
-### `npm start`
+- React, CSS, JS
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Install
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```sh
+npm install
+```
+
+## Usage
+
+```sh
+npm start
+```
+
+## Author
+
+👤 **Daniel Wollmann**
+
+- Website: https://willdooo.github.io/Personal-Website/
+- Github: [@Willdooo](https://github.com/Willdooo)
+- LinkedIn: [@linkedinlink](https://linkedin.com//in/daniel-wollmann)
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+---
+
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
