@@ -23,7 +23,8 @@ export default function setENG() {
        my Master's degree in Law at the Faculty of Law MUNI.
        If you are wondering why am I in Skills
         section below instead of showcasing my knowledge
-         of law and flexing with Latin for no goddamn reason
+         of law and flexing with Latin for no reason,
+
           listing programming languages, frameworks and
            other technologies that have nothing to do with law...`,
       text1: `It took me three years to realize
@@ -32,7 +33,7 @@ export default function setENG() {
       text2: `So who am I? I am a hardworking self-taught front-end
        developer with passion for programming and creating
        functional and interatctive UI.
-       This is beggining of my path to become a 
+       This is the beggining of my path to become a 
         full-stack developer.`,
     },
     skills: {
