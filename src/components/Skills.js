@@ -13,6 +13,7 @@ import {
   FaReact,
   FaGitAlt,
 } from "react-icons/fa";
+import { SiRedux } from "react-icons/si";
 import { MdWeb } from "react-icons/md";
 import { SiAdobephotoshop, SiAdobelightroomcc } from "react-icons/si";
 import CircularProgress from "@material-ui/core/CircularProgress";
@@ -135,6 +136,12 @@ const Skills = (props) => {
                 <FaReact />
               </Icon>
               <Typography variant="body1">React</Typography>
+            </div>
+            <div className={classes.specificskill}>
+              <Icon className={classes.smallIcon}>
+                <SiRedux />
+              </Icon>
+              <Typography variant="body1">Redux Toolkit</Typography>
             </div>
           </div>
         </Paper>

@@ -45,9 +45,16 @@ export default function setCZ() {
     projects: {
       title1: "Projekty",
       title2: "Další projekty",
+      astronauts: {
+        title: "Astronauti",
+        text: "Aplikace sloužící jako databáze lidí vytvořená pomocí Reduxu.",
+        tools: "React, React-router, Redux Toolkit",
+        live: `https://willdooo.github.io/Astronauts-Database_App/#/`,
+        repo: `https://github.com/Willdooo/Astronauts-Database_App`,
+      },
       website: {
         title: "Osobní web",
-        text: "Můj osobní web s portfóliem projektů. Líbí se Vám? Je mobile-friendly",
+        text: "Můj osobní web s portfóliem projektů. Líbí se Vám?",
         tools: "React, CSS",
         live: `https://willdooo.github.io/Personal-Website/`,
         repo: `https://github.com/Willdooo/Personal-Website`,

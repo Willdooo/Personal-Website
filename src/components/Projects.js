@@ -13,6 +13,7 @@ import calcImg from "../buildingBlocks/calcImg.png";
 import etchImg from "../buildingBlocks/etchImg.png";
 import restImg from "../buildingBlocks/restImg.png";
 import webImg from "../buildingBlocks/webImg.png";
+import astrImg from "../buildingBlocks/AstrImg.png";
 import Divider from "@material-ui/core/Divider";
 
 const useStyles = makeStyles(() => ({
@@ -125,6 +126,78 @@ const Projects = (props) => {
           {input.title1}
         </Typography>
         <Grid container className={classes.gridsContainer}>
+          {/** one item */}
+          <Grid
+            className={classes.itemWrap}
+            container
+            xl={10}
+            lg={10}
+            md={12}
+            sm={12}
+            xs={12}
+          >
+            <Grid
+              className={classes.itemPartImg}
+              item
+              xl={8}
+              lg={8}
+              md={8}
+              sm={12}
+              xs={12}
+            >
+              <div
+                className={classes.divImg}
+                style={{ backgroundImage: `url(${astrImg})`, height: "100%" }}
+              />
+            </Grid>
+            <Grid
+              className={classes.itemPartText}
+              item
+              xl={4}
+              lg={4}
+              md={4}
+              sm={12}
+              xs={12}
+            >
+              <Typography className={classes.textTitle} variant="h5">
+                {input.astronauts.title}
+              </Typography>
+              <Typography className={classes.textText} variant="body1">
+                {input.astronauts.text}
+              </Typography>
+              <Typography className={classes.textText} variant="body1">
+                <FaToolbox fontSize="2rem" /> {input.astronauts.tools}
+              </Typography>
+              <div className={classes.buttonDiv}>
+                <Button
+                  variant="contained"
+                  className="hvr-pulse-grow"
+                  style={{
+                    margin: "0rem 1rem 0rem 1rem",
+                    color: "rgb(255, 202, 46)",
+                    backgroundColor: "#404040",
+                  }}
+                  href={input.astronauts.live}
+                  target="_blank"
+                >
+                  <FaGamepad style={{ fontSize: "2.5rem" }} />
+                </Button>
+                <Button
+                  variant="contained"
+                  style={{
+                    margin: "0rem 1rem 0rem 1rem",
+                    color: "rgb(255, 238, 188)",
+                    backgroundColor: "#404040",
+                  }}
+                  className="hvr-pulse-grow"
+                  href={input.astronauts.repo}
+                  target="_blank"
+                >
+                  <FaCode style={{ fontSize: "2.5rem" }} />
+                </Button>
+              </div>
+            </Grid>
+          </Grid>
           {/** one item */}
           <Grid
             className={classes.itemWrap}

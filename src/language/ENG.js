@@ -46,6 +46,13 @@ export default function setENG() {
     projects: {
       title1: "Projects",
       title2: "More projects",
+      astronauts: {
+        title: "Awesome Astronauts",
+        text: "Database for people with Redux as a state management tool.",
+        tools: "React, React-router, Redux Toolkit",
+        live: `https://willdooo.github.io/Astronauts-Database_App/#/`,
+        repo: `https://github.com/Willdooo/Astronauts-Database_App`,
+      },
       website: {
         title: "Personal Website",
         text: "My personal mobile-friendly web portfolio to showcase my abilities. Do you like it?",
